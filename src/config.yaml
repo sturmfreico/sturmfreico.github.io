@@ -1,6 +1,7 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: Sturmfrei
+  # site: 'https://sturmfrei.com.au'
+  site: 'https://sturmfreico.github.io'
   base: '/'
   trailingSlash: false
 
@@ -9,14 +10,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: Sturmfrei Pty Ltd
+    template: '%s — Sturmfrei'
+  description: "\U0001F680 Delightful apps and tools for the web."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: Sturmfrei
     images:
       - url: '~/assets/images/default.png'
         width: 1200
