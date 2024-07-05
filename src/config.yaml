@@ -1,7 +1,6 @@
 site:
   name: Sturmfrei
-  # site: 'https://sturmfrei.com.au'
-  site: 'https://sturmfreico.github.io'
+  site: 'https://sturmfrei.com.au'
   base: '/'
   trailingSlash: false
 
