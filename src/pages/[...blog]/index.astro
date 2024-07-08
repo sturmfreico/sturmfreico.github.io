@@ -40,6 +40,7 @@ const metadata = merge(
         ? { images: [{ url: image, width: (image as ImageMetadata)?.width, height: (image as ImageMetadata)?.height }] }
         : {}),
     },
+    showRssFeed: true,
   },
   { ...(post?.metadata ? { ...post.metadata, canonical: post.metadata?.canonical || url } : {}) }
 ) as MetaData;

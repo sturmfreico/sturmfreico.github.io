@@ -10,7 +10,7 @@ site:
 metadata:
   title:
     default: Sturmfrei Pty Ltd
-    template: '%s — Sturmfrei'
+    template: '%s · Sturmfrei'
   description: "\U0001F680 Delightful apps and tools for the web."
   robots:
     index: true

@@ -61,6 +61,7 @@ export interface MetaData {
 
   openGraph?: MetaDataOpenGraph;
   twitter?: MetaDataTwitter;
+  showRssFeed?: boolean;
 }
 
 export interface MetaDataRobots {
