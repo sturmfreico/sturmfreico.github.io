@@ -1,5 +1,5 @@
 site:
-  name: Sturmfrei
+  name: sturmfrei
   site: 'https://sturmfrei.com.au'
   base: '/'
   trailingSlash: false
@@ -10,21 +10,21 @@ site:
 metadata:
   title:
     default: Sturmfrei Pty Ltd
-    template: '%s · Sturmfrei'
+    template: '%s · sturmfrei'
   description: "\U0001F680 Delightful apps and tools for the web."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: Sturmfrei
+    site_name: sturmfrei
     images:
       - url: '~/assets/images/default.png'
         width: 1200
         height: 628
     type: website
   twitter:
-    handle: '@onwidget'
-    site: '@onwidget'
+    handle: '@sturmfreico'
+    site: '@sturmfreico'
     cardType: summary_large_image
 
 i18n:
