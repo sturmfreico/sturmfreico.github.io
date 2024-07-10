@@ -47,6 +47,8 @@ You represent that you are over the age of 18\. The Company does not permit thos
 
 Your access to and use of the Service is also conditioned on Your acceptance of and compliance with the Privacy Policy of the Company. Our Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your personal information when You use the Application or the Website and tells You about Your privacy rights and how the law protects You. Please read Our Privacy Policy carefully before using Our Service.
 
+Hero png image from [pngtree.com](https://pngtree.com/freepng/three-dimensional-high-rise-building-technology-scene_3688671.html)
+
 ## Links to Other Websites
 
 Our Service may contain links to third-party web sites or services that are not owned or controlled by the Company.
