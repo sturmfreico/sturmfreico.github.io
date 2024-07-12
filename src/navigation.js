@@ -18,14 +18,6 @@ export const headerData = {
           text: 'shiddy.biz',
           href: 'https://shiddy.biz/'
         },
-        {
-          text: 'shiddy.biz',
-          href: 'https://shiddy.biz/'
-        },
-        {
-          text: 'shiddy.biz',
-          href: 'https://shiddy.biz/'
-        },
       ],
     },
     {
