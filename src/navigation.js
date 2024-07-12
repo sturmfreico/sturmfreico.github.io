@@ -3,15 +3,28 @@ import { getPermalink, getBlogPermalink } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Shopify Apps',
+      text: 'Apps',
       links: [
         {
-          text: 'Free Shipping Bar',
+          text: 'Free Shipping Bar - Shopify',
           href: '#'
         },
+      ],
+    },
+    {
+      text: 'Projects',
+      links: [
         {
-          text: 'More Coming Soon',
-          href: '#'
+          text: 'shiddy.biz',
+          href: 'https://shiddy.biz/'
+        },
+        {
+          text: 'shiddy.biz',
+          href: 'https://shiddy.biz/'
+        },
+        {
+          text: 'shiddy.biz',
+          href: 'https://shiddy.biz/'
         },
       ],
     },
