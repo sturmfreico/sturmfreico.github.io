@@ -89,17 +89,17 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
       >
         {
           links.map(({ text, href, links }) => (
-            <li class={links?.length ? 'dropdown' : ''}>
+            <li class={links?.length ? 'group dropdown' : 'group'}>
               {links?.length ? (
                 <>
                   <button
                     type="button"
-                    class="hover:text-link dark:hover:text-white px-4 py-3 flex items-center whitespace-nowrap"
+                    class="hover:text-link dark:group-hover:text-white dark:md:group-hover:bg-[#11132b] px-4 py-3 flex items-center whitespace-nowrap rounded-tr rounded-tl"
                   >
                     {text}{' '}
                     <Icon name="tabler:chevron-down" class="w-3.5 h-3.5 ml-0.5 rtl:ml-0 rtl:mr-0.5 hidden md:inline" />
                   </button>
-                  <ul class="dropdown-menu md:backdrop-blur-md dark:md:bg-[#11132b] rounded md:absolute pl-4 md:pl-0 md:hidden font-medium md:bg-white/90 md:min-w-[200px] drop-shadow-xl dark:md:shadow-md dark:md:shadow-black/50">
+                  <ul class="dropdown-menu md:backdrop-blur-md dark:md:bg-[#11132b] rounded-bl rounded-br rounded-tr md:absolute pl-4 md:pl-0 md:hidden font-medium md:bg-white/90 md:min-w-[200px] drop-shadow-xl dark:md:shadow-md dark:md:shadow-black/50">
                     {links.map(({ text: text2, href: href2 }) => (
                       <li>
                         <a
@@ -119,7 +119,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
               ) : (
                 <a
                   class:list={[
-                    'hover:text-link dark:hover:text-white px-4 py-3 flex items-center',
+                    'hover:text-link dark:hover:text-white dark:md:group-hover:bg-[#11132b] px-4 py-3 flex items-center rounded',
                     { 'aw-link-active': href === currentPath },
                   ]}
                   href={href}
