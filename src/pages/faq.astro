@@ -1,5 +1,6 @@
 ---
 import FAQs from '~/components/widgets/FAQs.astro';
+import Features2 from '~/components/widgets/Features2.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
@@ -10,7 +11,6 @@ const metadata = {
 
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
-
   <Hero
     tagline="FAQS"
     image={{
@@ -18,11 +18,10 @@ const metadata = {
       alt: 'Photo by Vadim Bogulov on Unsplash',
     }}
   >
-    <Fragment slot="title"> Frequently Asked Questions </Fragment>
-
+    <Fragment slot="title">Frequently Asked Questions</Fragment>
     <Fragment slot="subtitle">
-      Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can
-      elevate your web development journey.
+      Dive into our comprehensive FAQ guide, to find answers to recurring questions regarding our apps and tools for the
+      web.
     </Fragment>
   </Hero>
 
@@ -59,6 +58,30 @@ const metadata = {
         title: 'If you could only ask one question to each person you meet, what would that question be?',
         description:
           "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+      },
+    ]}
+  />
+
+  <Features2
+    title="Still have questions?"
+    subtitle="Feel free to reach out to us for more information."
+    columns={2}
+    items={[
+      {
+        title: 'Social Media',
+        description: 'Contact us on X or Instagram',
+        icon: 'tabler:message-circle-2',
+        classes: {
+          icon: 'text-blue-500',
+        },
+      },
+      {
+        title: 'Email Us',
+        description: 'support@sturmfrei.com.au',
+        icon: 'tabler:mail',
+        classes: {
+          icon: 'text-blue-500',
+        },
       },
     ]}
   />

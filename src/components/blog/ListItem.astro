@@ -22,7 +22,7 @@ const image = (await findImage(post.image)) as ImageMetadata | undefined;
 const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : '';
 ---
 
-<article class={`relative group max-w-md mx-auto md:max-w-none grid gap-6 md:gap-8 ${image ? 'md:grid-cols-2' : ''}`}>
+<article class={`max-w-md mx-auto md:max-w-none grid gap-6 md:gap-8 ${image ? 'md:grid-cols-2' : ''}`}>
   {
     image &&
       (link ? (
@@ -62,65 +62,67 @@ const link = APP_BLOG?.post?.isEnabled ? getPermalink(post.permalink, 'post') : 
       ))
   }
   <div class="mt-2">
-    <header>
-      <div class="mb-1">
-        <span class="text-sm">
-          <Icon name="tabler:clock" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
-          <time datetime={String(post.publishDate)} class="inline-block">{getFormattedDate(post.publishDate)}</time>
+    <div class="group relative">
+      <header>
+        <div class="mb-1">
+          <span class="text-sm">
+            <Icon name="tabler:clock" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
+            <time datetime={String(post.publishDate)} class="inline-block">{getFormattedDate(post.publishDate)}</time>
+            {
+              post.author && (
+                <>
+                  {' '}
+                  · <Icon name="tabler:user" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
+                  <span>{post.author.replaceAll('-', ' ')}</span>
+                </>
+              )
+            }
+            {
+              post.category && (
+                <>
+                  {' '}
+                  ·{' '}
+                  <a class="hover:underline" href={getPermalink(post.category.slug, 'category')}>
+                    {post.category.title}
+                  </a>
+                </>
+              )
+            }
+          </span>
+        </div>
+        <h2 class="text-xl sm:text-2xl font-bold leading-tight mb-2 font-heading dark:text-slate-300">
           {
-            post.author && (
-              <>
-                {' '}
-                · <Icon name="tabler:user" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
-                <span>{post.author.replaceAll('-', ' ')}</span>
-              </>
+            link ? (
+              <a
+                class="inline-block group-hover:text-blue-500 dark:group-hover:text-blue-500 transition ease-in duration-200"
+                href={link}
+              >
+                {post.title}
+              </a>
+            ) : (
+              post.title
             )
           }
-          {
-            post.category && (
-              <>
-                {' '}
-                ·{' '}
-                <a class="hover:underline" href={getPermalink(post.category.slug, 'category')}>
-                  {post.category.title}
-                </a>
-              </>
-            )
-          }
-        </span>
-      </div>
-      <h2 class="text-xl sm:text-2xl font-bold leading-tight mb-2 font-heading dark:text-slate-300">
-        {
-          link ? (
-            <a
-              class="inline-block group-hover:text-primary dark:hover:text-blue-700 transition ease-in duration-200"
-              href={link}
-            >
-              {post.title}
-            </a>
-          ) : (
-            post.title
-          )
-        }
-      </h2>
-    </header>
+        </h2>
+      </header>
 
-    {post.excerpt && <p class="flex-grow text-muted dark:text-slate-400 text-lg">{post.excerpt}</p>}
-    {
-      post.tags && Array.isArray(post.tags) ? (
-        <footer class="mt-5">
-          <PostTags tags={post.tags} />
-        </footer>
-      ) : (
-        <Fragment />
-      )
-    }
+      {post.excerpt && <p class="flex-grow text-muted dark:text-slate-400 text-lg">{post.excerpt}</p>}
+      {
+        post.tags && Array.isArray(post.tags) ? (
+          <footer class="mt-5">
+            <PostTags tags={post.tags} />
+          </footer>
+        ) : (
+          <Fragment />
+        )
+      }
+      {
+        link && (
+          <a href={link} tabindex="0">
+            <span class="absolute inset-0" />
+          </a>
+        )
+      }
+    </div>
   </div>
-  {
-    link && (
-      <a href={link} tabindex="0">
-        <span class="absolute inset-0" />
-      </a>
-    )
-  }
 </article>
