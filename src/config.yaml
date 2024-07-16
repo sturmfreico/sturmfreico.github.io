@@ -9,16 +9,16 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: Sturmfrei Pty Ltd
+    default: sturmfrei
     template: '%s · sturmfrei'
-  description: "\U0001F680 Delightful apps and tools for the web."
+  description: "Finely crafted apps and tools for the web"
   robots:
     index: true
     follow: true
   openGraph:
     site_name: sturmfrei
     images:
-      - url: '~/assets/images/default.png'
+      - url: '~/assets/images/screen.jpeg'
         width: 1200
         height: 628
     type: website
