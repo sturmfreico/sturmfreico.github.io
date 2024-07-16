@@ -5,6 +5,11 @@ import Hero from '~/components/widgets/Hero.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 
+const scrambleEmail = 'su<!-- split -->p<!-- split -->port<span>@</span>sturm<!-- split -->frei.com.au';
+const emailLink = '<a id="sf-mailto-link" href="#" tabindex="0"><span class="absolute inset-0"></span></a>';
+const xLink =
+  '<a href="https://x.com/sturmfreico" target="_blank" tabindex="0"><span class="absolute inset-0"></span></a>';
+
 const metadata = {
   title: 'Sturmfrei Pty Ltd',
   ignoreTitleTemplate: true,
@@ -21,7 +26,7 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="subtitle">
-      Empowering E-commerce: Innovative Shopify Apps and Cutting-Edge Web Tools for Your Online Success
+      Empowering E-commerce: Innovative Shopify Apps and Cutting-Edge Web Tools <br /> for Your Online Success
     </Fragment>
   </Hero>
 
@@ -30,43 +35,31 @@ const metadata = {
     id="features"
     tagline="Features"
     title="What you get with our apps"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022."
+    subtitle="Best in class quality to help you succeed"
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Easy Setup',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+          'Shopify apps that are easy to install and configure, with no coding required. Get started in minutes.',
+        icon: 'tabler:plug-connected',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'Excellent Performance',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
-      },
-      {
-        title: 'Best Practices',
-        description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
-      },
-      {
-        title: 'Excellent Page Speed',
-        description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
+          'Our apps are optimized for performance, ensuring a fast and responsive experience for your customers.',
         icon: 'tabler:rocket',
       },
       {
         title: 'Search Engine Optimization (SEO)',
         description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
+          'Our apps are designed with SEO in mind, helping you rank higher in search engine results and drive more traffic to your store.',
+        icon: 'tabler:brand-google-filled',
       },
       {
-        title: 'Open to new ideas and contributions',
+        title: 'Best Practices',
         description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
+          'Our apps are built with best practices in mind, ensuring a seamless experience for you and your customers.',
+        icon: 'tabler:list-check',
       },
     ]}
   />
@@ -79,8 +72,8 @@ const metadata = {
     items={[
       {
         title: 'Social Media',
-        description: 'Contact us on X or Instagram',
-        icon: 'tabler:message-circle-2',
+        description: `Contact us on X ${xLink}`,
+        icon: 'tabler:brand-x',
         classes: {
           icon: 'text-blue-500',
           panel: 'dark:bg-dark',
@@ -88,7 +81,7 @@ const metadata = {
       },
       {
         title: 'Email',
-        description: 'support@sturmfrei.com.au',
+        description: `${scrambleEmail} ${emailLink}`,
         icon: 'tabler:mail',
         classes: {
           icon: 'text-blue-500',

@@ -7,6 +7,7 @@ import { UI } from 'astrowind:config';
     return;
   }
 
+  const mToHref = 'mail' + 'to:su' + 'pp' + 'ort' + '@s' + 'turm' + 'frei.' + 'com.au';
   window.basic_script = true;
 
   function applyTheme(theme) {
@@ -138,7 +139,10 @@ import { UI } from 'astrowind:config';
         ticking = true;
       }
     });
+
+    document.getElementById('sf-mailto-link')?.setAttribute('href', mToHref);
   };
+
   const onPageShow = function () {
     document.documentElement.classList.add('motion-safe:scroll-smooth');
     const elem = document.querySelector('[data-aw-toggle-menu]');

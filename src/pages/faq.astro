@@ -1,8 +1,14 @@
 ---
+import Layout from '~/layouts/PageLayout.astro';
+
 import FAQs from '~/components/widgets/FAQs.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Hero from '~/components/widgets/Hero.astro';
-import Layout from '~/layouts/PageLayout.astro';
+
+const scrambleEmail = 'su<!-- split -->p<!-- split -->port<span>@</span>sturm<!-- split -->frei.com.au';
+const emailLink = '<a id="sf-mailto-link" href="#" tabindex="0"><span class="absolute inset-0"></span></a>';
+const xLink =
+  '<a href="https://x.com/sturmfreico" target="_blank" tabindex="0"><span class="absolute inset-0"></span></a>';
 
 const metadata = {
   title: 'FAQS',
@@ -69,15 +75,15 @@ const metadata = {
     items={[
       {
         title: 'Social Media',
-        description: 'Contact us on X or Instagram',
-        icon: 'tabler:message-circle-2',
+        description: `Contact us on X ${xLink}`,
+        icon: 'tabler:brand-x',
         classes: {
           icon: 'text-blue-500',
         },
       },
       {
         title: 'Email',
-        description: 'support@sturmfrei.com.au',
+        description: `${scrambleEmail} ${emailLink}`,
         icon: 'tabler:mail',
         classes: {
           icon: 'text-blue-500',
