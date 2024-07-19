@@ -2,15 +2,21 @@
 import Image from './common/Image.astro';
 ---
 
-<Image
-  src="~/assets/images/sturmfrei-logo.svg"
-  alt="AstroWind Hero Image"
-  class="max-h-8 md:max-h-7 dark:hidden"
-  layout="responsive"
-/>
+<Image src="~/assets/images/sturmfrei-logo.svg" alt="AstroWind Hero Image" class="!max-h-8 md:!max-h-7 dark:hidden" />
 <Image
   src="~/assets/images/sturmfrei-logo-dark.svg"
   alt="AstroWind Hero Image"
-  class="max-h-8 md:max-h-7 hidden dark:inline"
-  layout="responsive"
+  class="!max-h-8 md:!max-h-7 hidden dark:inline"
 />
+<!-- <img
+  src="~/assets/images/sturmfrei-logo.svg"
+  class="max-h-8 md:max-h-7 dark:hidden"
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+<img
+  src="~/assets/images/sturmfrei-logo-dark.svg"
+  class="max-h-8 md:max-h-7 hidden dark:inline"
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/> -->
