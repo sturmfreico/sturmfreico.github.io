@@ -3,7 +3,7 @@ title: 'Terms and Conditions'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-_Last updated_: July 18, 2024
+_Last updated_: July 20, 2024
 
 Please read these terms and conditions carefully before using Our Service.
 
@@ -22,7 +22,7 @@ For the purposes of these Terms and Conditions:
 - **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Sturmfrei Pty Ltd, 3 Dune Walk, NSW 2230.
 - **Device** means any device that can access the Service such as a computer, a cellphone or a digital tablet.
 - **Service** refers to the Website.
-- **Terms and Conditions** (also referred as "Terms") mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service. This Terms and Conditions agreement is a Demo.
+- **Terms and Conditions** (also referred as "Terms") mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service.
 - **Third-party Social Media Service** means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.
 - **Website** refers to Sturmfrei, accessible from [https://sturmfrei.com.au](https://sturmfrei.com.au)
 - **You** means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
