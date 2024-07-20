@@ -1,22 +1,9 @@
 ---
-import Image from './common/Image.astro';
+import { Image } from 'astro:assets';
+
+import sturmfreiLogo from '~/assets/images/sturmfrei-logo.svg';
+import sturmfreiLogoDark from '~/assets/images/sturmfrei-logo-dark.svg';
 ---
 
-<Image src="~/assets/images/sturmfrei-logo.svg" alt="AstroWind Hero Image" class="!max-h-8 md:!max-h-7 dark:hidden" />
-<Image
-  src="~/assets/images/sturmfrei-logo-dark.svg"
-  alt="AstroWind Hero Image"
-  class="!max-h-8 md:!max-h-7 hidden dark:inline"
-/>
-<!-- <img
-  src="~/assets/images/sturmfrei-logo.svg"
-  class="max-h-8 md:max-h-7 dark:hidden"
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
-/>
-<img
-  src="~/assets/images/sturmfrei-logo-dark.svg"
-  class="max-h-8 md:max-h-7 hidden dark:inline"
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
-/> -->
+<Image src={sturmfreiLogo} alt="Sturmfrei Logo" class="max-w-32 dark:hidden" />
+<Image src={sturmfreiLogoDark} alt="Sturmfrei Logo" class="max-w-32 hidden dark:inline" />

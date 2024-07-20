@@ -84,6 +84,10 @@ export default defineConfig({
     rehypePlugins: [responsiveTablesRehypePlugin, lazyImagesRehypePlugin],
   },
 
+  build: {
+    format: 'file'
+  },
+
   vite: {
     resolve: {
       alias: {
