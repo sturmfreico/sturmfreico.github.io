@@ -17,6 +17,9 @@ module.exports = {
         serif: ['var(--aw-font-serif, ui-serif)', ...defaultTheme.fontFamily.serif],
         heading: ['var(--aw-font-heading, ui-sans-serif)', ...defaultTheme.fontFamily.sans],
       },
+      boxShadow: {
+        'glow': '0 4px 30px rgba(0,0,0,0.1)',
+      },
     },
   },
   plugins: [typographyPlugin],
