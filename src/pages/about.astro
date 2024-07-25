@@ -23,6 +23,21 @@ const metadata = {
     </Fragment>
   </Hero>
 
+  <!-- ********** Features2 Widget ********** -->
+  <Features2
+    title="About Us"
+    subtitle="At sturmfrei, our mission is simple yet ambitious: to empower e-commerce businesses by providing them with high-quality, user-friendly Shopify apps and web tools. We believe that by streamlining the online shopping experience, we can help businesses of all sizes thrive in an increasingly competitive market."
+    classes={{
+      headline: {
+        container: 'max-w-3xl md:mb-8',
+      },
+    }}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-white/5"></div>
+    </Fragment>
+  </Features2>
+
   <!-- ********** Steps2 Widget ********** -->
   <Steps2
     title="Our Values"
@@ -30,26 +45,68 @@ const metadata = {
     items={[
       {
         title: 'We speak with actions',
-        description: 'Donec id nibh neque. Quisque et fermentum tortor. Fusce vitae dolor a mauris dignissim commodo.',
+        description: 'We believe in doing more than saying, because actions speak louder than words.',
       },
       {
         title: 'We stay foolish',
-        description: 'Donec id nibh neque. Quisque et fermentum tortor. Fusce vitae dolor a mauris dignissim commodo.',
+        description: 'We are not afraid to take risks and try new things, because that is how we learn and grow.',
       },
       {
         title: 'We value time',
-        description: 'Donec id nibh neque. Quisque et fermentum tortor. Fusce vitae dolor a mauris dignissim commodo.',
+        description: 'We believe that time is the most valuable resource, and we make the most of it.',
       },
       {
         title: 'We keep it simple',
-        description: 'Donec id nibh neque. Quisque et fermentum tortor. Fusce vitae dolor a mauris dignissim commodo.',
+        description: 'We believe that simplicity is the ultimate sophistication, and we strive to keep things simple.',
       },
       {
         title: 'We enjoy the journey',
-        description: 'Donec id nibh neque. Quisque et fermentum tortor. Fusce vitae dolor a mauris dignissim commodo.',
+        description: 'We believe that the journey is just as important as the destination, and we enjoy the ride.',
       },
     ]}
   />
+
+  <!-- ********** Features2 Widget ********** -->
+  <Features2
+    title="What services do we provide?"
+    subtitle="We offer a wide range of website templates that suit various industries and purposes such as business, portfolio, e-commerce, blog, etc."
+    items={[
+      {
+        title: 'Installation Instructions',
+        description:
+          'Offer clear instructions on how to download the purchased templates and install them on various website platforms or content management systems.',
+        icon: 'flat-color-icons:document',
+        classes: {
+          icon: 'text-blue-500',
+          panel: 'dark:bg-dark',
+        },
+      },
+      {
+        title: 'Demo and Previews',
+        description:
+          'Provide interactive demos and previews that allow customers to see how their chosen template will look and function before making a purchase.',
+        icon: 'flat-color-icons:template',
+        classes: {
+          icon: 'text-blue-500',
+          panel: 'dark:bg-dark',
+        },
+      },
+      {
+        title: 'Technical Support',
+        description:
+          'Providing customer support for any technical issues related to the templates or their implementation.',
+        icon: 'flat-color-icons:voice-presentation',
+        classes: {
+          icon: 'text-blue-500',
+          panel: 'dark:bg-dark',
+        },
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-white/5"></div>
+    </Fragment>
+  </Features2>
 
   <!-- ********** Features2 Widget ********** -->
   <Features2
