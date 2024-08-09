@@ -6,8 +6,8 @@ export const headerData = {
       text: 'Apps',
       links: [
         {
-          text: 'Free Shipping Banner - Shopify',
-          href: getPermalink('/apps/free-shipping-banner'),
+          text: 'Save For Later - Shopify',
+          href: getPermalink('/apps/save-for-later'),
         },
       ],
     },
