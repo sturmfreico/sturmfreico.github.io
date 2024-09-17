@@ -6,8 +6,8 @@ export const headerData = {
       text: 'Apps',
       links: [
         {
-          text: 'Save For Later - Shopify',
-          href: getPermalink('/apps/save-for-later'),
+          text: 'Order Update - Shopify',
+          href: getPermalink('/apps/shopify-order-update'),
         },
       ],
     },
@@ -16,7 +16,7 @@ export const headerData = {
       links: [
         {
           text: 'shiddy.biz',
-          href: 'https://shiddy.biz/'
+          href: 'https://shiddy.biz/',
         },
       ],
     },
