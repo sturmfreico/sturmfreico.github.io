@@ -6,20 +6,20 @@ export const headerData = {
       text: 'Apps',
       links: [
         {
-          text: 'Order Update - Shopify',
-          href: getPermalink('/apps/shopify-order-update'),
+          text: 'EasyEdit - Order Editing',
+          href: 'https://geteasyedit.com/',
         },
       ],
     },
-    {
-      text: 'Projects',
-      links: [
-        {
-          text: 'shiddy.biz',
-          href: 'https://shiddy.biz/',
-        },
-      ],
-    },
+    // {
+    //   text: 'Projects',
+    //   links: [
+    //     {
+    //       text: 'shiddy.biz',
+    //       href: 'https://shiddy.biz/',
+    //     },
+    //   ],
+    // },
     {
       text: 'FAQS',
       href: getPermalink('/faq'),
@@ -81,5 +81,5 @@ export const footerData = {
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/sturmfreico/' },
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/sturmfreico' },
   ],
-  footNote: `© 2024 Sturmfrei Pty Ltd · All rights reserved`,
+  footNote: `© 2025 Sturmfrei Pty Ltd · All rights reserved`,
 };
