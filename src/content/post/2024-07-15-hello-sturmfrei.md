@@ -14,9 +14,9 @@ In the bustling tech hub of Sydney, our new startup, <span class="text-accent hi
 
 Let us introduce ourselves: We’re Felix and Christoph, and together we are the founders of sturmfrei. Growing up in Hamburg, Germany, we developed a passion for technology and entrepreneurship at a young age. Our journey from tinkering with computers in our childhood home to launching a cutting-edge startup in one of the world's most vibrant cities has been nothing short of inspiring.
 
-Felix has a background in business administration, marketing, and customer success management. He has a keen eye for market trends and a knack for identifying opportunities that others might overlook. Together, we form a formidable team, combining technical expertise with business acumen.
-
 Christoph brings a wealth of experience in software engineering and product development. He spent several years working with leading tech companies, honing his skills and gaining invaluable industry insights.
+
+Felix has a background in business administration, marketing, and customer success management. He has a keen eye for market trends and a knack for identifying opportunities that others might overlook. Together, we form a formidable team, combining technical expertise with business acumen.
 
 ### Our Mission
 
