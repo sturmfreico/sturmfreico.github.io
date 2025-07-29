@@ -1,7 +1,7 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 
-// import FAQs from '~/components/widgets/FAQs.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Hero from '~/components/widgets/Hero.astro';
 
@@ -31,41 +31,21 @@ const metadata = {
   </Hero>
 
   <!-- FAQs Widget ******************* -->
-  <!-- <FAQs
+  <FAQs
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Lorem ipsum dolor?',
+        title: 'Questions regarding EasyEdit?',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo dolor, gravida eget dapibus feugiat, sollicitudin id quam. Proin feugiat nulla erat, nec aliquet enim gravida quis. Etiam commodo nunc a leo efficitur, ut varius libero malesuada. Etiam sollicitudin blandit urna at pharetra. Nam vitae hendrerit dolor.',
+          'Please visit the <a href="https://geteasyedit.com/#faqs" target="_blank" class="hover:underline">FAQ section on the EasyEdit homepage</a> for more information.',
       },
       {
-        title: 'Lorem ipsum dolor sit amet?',
+        title: 'How can I get support?',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo dolor, gravida eget dapibus feugiat, sollicitudin id quam. Proin feugiat nulla erat, nec aliquet enim gravida quis. Etiam commodo nunc a leo efficitur, ut varius libero malesuada. Etiam sollicitudin blandit urna at pharetra. Nam vitae hendrerit dolor.',
-      },
-      {
-        title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit?',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo dolor, gravida eget dapibus feugiat, sollicitudin id quam. Proin feugiat nulla erat, nec aliquet enim gravida quis. Etiam commodo nunc a leo efficitur, ut varius libero malesuada. Etiam sollicitudin blandit urna at pharetra. Nam vitae hendrerit dolor.',
-      },
-      {
-        title: 'Lorem ipsum dolor sit amet?',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo dolor, gravida eget dapibus feugiat, sollicitudin id quam. Proin feugiat nulla erat, nec aliquet enim gravida quis. Etiam commodo nunc a leo efficitur, ut varius libero malesuada. Etiam sollicitudin blandit urna at pharetra. Nam vitae hendrerit dolor.',
-      },
-      {
-        title: 'Lorem ipsum dolor sit amet, consectetur?',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo dolor, gravida eget dapibus feugiat, sollicitudin id quam. Proin feugiat nulla erat, nec aliquet enim gravida quis. Etiam commodo nunc a leo efficitur, ut varius libero malesuada. Etiam sollicitudin blandit urna at pharetra. Nam vitae hendrerit dolor.',
-      },
-      {
-        title: 'Lorem ipsum dolor?',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo dolor, gravida eget dapibus feugiat, sollicitudin id quam. Proin feugiat nulla erat, nec aliquet enim gravida quis. Etiam commodo nunc a leo efficitur, ut varius libero malesuada. Etiam sollicitudin blandit urna at pharetra. Nam vitae hendrerit dolor.',
+          'You can contact us via email at support@sturmfrei.com.au or via <a href="https://x.com/sturmfreico" target="_blank" class="hover:underline">X / Twitter</a>.',
       },
     ]}
-  /> -->
+  />
 
   <Features2
     title="Still have questions?"
