@@ -1,8 +1,10 @@
-# sturmfrei.com.au
+# sturmfrei
 
 **Finely crafted apps and tools for the web**
 
 Welcome to the official repository for the Sturmfrei company website. We're a Sydney-based startup empowering e-commerce businesses with innovative Shopify apps and cutting-edge web tools for online success.
+
+![sturmfrei Hero](./src/assets/images/screen.jpeg)
 
 🌐 **Website:** [https://sturmfrei.com.au](https://sturmfrei.com.au)
 
@@ -21,6 +23,7 @@ EasyEdit is our flagship Shopify app that allows customers to edit their orders 
 🔗 **Learn more:** [https://geteasyedit.com](https://geteasyedit.com)
 
 **Key Features:**
+
 - **Self-Service Order Editing:** Give customers the power to modify their orders without contacting support
 - **Fulfillment Hold Workflow:** Pre-built Shopify Flow integration to automatically hold orders during the edit window
 - **Customizable Edit Time Window:** Set your own time window for order edits (default: 30 minutes)
@@ -30,6 +33,7 @@ EasyEdit is our flagship Shopify app that allows customers to edit their orders 
 ## Technology Stack
 
 This website is built with:
+
 - **[Astro](https://astro.build/)** - Modern static site generator
 - **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
 - **[TypeScript](https://www.typescriptlang.org/)** - Type-safe JavaScript
@@ -89,6 +93,7 @@ To customize fonts, colors, or other design elements, refer to:
 ### Content Management
 
 Blog posts and content are managed through:
+
 - `src/content/` - Content collections
 - `public/decapcms/` - Decap CMS configuration
 
