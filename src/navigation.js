@@ -6,12 +6,12 @@ export const headerData = {
       text: 'Products',
       links: [
         {
-          text: 'Tieout',
-          href: getPermalink('/apps/tieout'),
+          text: 'EasyEdit',
+          href: getPermalink('/apps/easyedit'),
         },
         {
-          text: 'EasyEdit - Order Editing',
-          href: 'https://geteasyedit.com/',
+          text: 'Tieout',
+          href: getPermalink('/apps/tieout'),
         },
       ],
     },
