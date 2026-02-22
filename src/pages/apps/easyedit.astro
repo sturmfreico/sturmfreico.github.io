@@ -1,0 +1,170 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'EasyEdit - Self-Serve Order Editing for Shopify',
+  description:
+    'Let your customers edit their own orders after purchase. Reduce support tickets by up to 90% with self-serve address changes, line item updates, and cancellations.',
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Start Free Trial',
+        href: 'https://apps.shopify.com/easyedit-order-editing',
+        target: '_blank',
+        icon: 'tabler:arrow-right',
+      },
+      {
+        text: 'Visit EasyEdit',
+        href: 'https://geteasyedit.com/',
+        target: '_blank',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Stop Drowning in <span class="text-accent highlight">"Change My Order"</span> Requests
+    </Fragment>
+    <Fragment slot="subtitle">
+      Let your Shopify customers edit their own orders after purchase. Change addresses, update line items, and cancel
+      orders — all without contacting support.
+    </Fragment>
+  </Hero>
+
+  <Stats
+    title="Built for Growing Shopify Stores"
+    stats={[
+      { title: 'Support Tickets Saved', amount: '90%' },
+      { title: 'Setup Time', amount: '2 min' },
+      { title: 'Free Trial', amount: '30 days' },
+    ]}
+  />
+
+  <Features
+    id="features"
+    tagline="Features"
+    title="Everything You Need to Empower Your Customers"
+    subtitle="Give shoppers the tools to manage their own orders while you stay in full control."
+    items={[
+      {
+        title: 'Address Editing',
+        description:
+          'Customers can update their shipping address after placing an order — no more back-and-forth emails.',
+        icon: 'tabler:map-pin',
+      },
+      {
+        title: 'Line Item Updates',
+        description: 'Let customers add, remove, or swap products in their order before it ships.',
+        icon: 'tabler:shopping-cart',
+      },
+      {
+        title: 'Order Cancellation',
+        description: 'Allow customers to cancel orders themselves within your configured time window.',
+        icon: 'tabler:circle-x',
+      },
+      {
+        title: 'Merchant Controls',
+        description:
+          'Set exactly what customers can edit and define time windows for when changes are allowed.',
+        icon: 'tabler:adjustments',
+      },
+      {
+        title: 'Analytics Dashboard',
+        description: 'Track order edits, cancellations, and support savings with a built-in analytics dashboard.',
+        icon: 'tabler:chart-bar',
+      },
+      {
+        title: 'Shopify Flow Integration',
+        description: 'Build custom automation workflows with native Shopify Flow support.',
+        icon: 'tabler:arrows-shuffle',
+      },
+    ]}
+  />
+
+  <Steps
+    title="Up and Running in Minutes"
+    subtitle="Install EasyEdit, configure your preferences, and let your customers start self-serving immediately."
+    items={[
+      {
+        title: 'Install the App',
+        description:
+          'Add EasyEdit to your Shopify store in just a couple of clicks. Works with any theme, no code required.',
+        icon: 'tabler:download',
+      },
+      {
+        title: 'Configure Your Rules',
+        description:
+          'Choose what customers can edit — addresses, line items, cancellations — and set the time window for changes.',
+        icon: 'tabler:settings',
+      },
+      {
+        title: 'Watch Support Tickets Drop',
+        description:
+          'Customers edit their own orders from the thank-you page or order status page. Inventory and payments update automatically.',
+        icon: 'tabler:trending-down',
+      },
+    ]}
+  />
+
+  <FAQs
+    title="Frequently Asked Questions"
+    tagline="FAQs"
+    columns={1}
+    items={[
+      {
+        title: 'What is EasyEdit?',
+        description:
+          'EasyEdit is a Shopify app that enables your customers to edit their own orders after purchase — including changing shipping addresses, updating line items, and cancelling orders — without needing to contact support.',
+      },
+      {
+        title: 'Can I control what customers are allowed to edit?',
+        description:
+          'Absolutely. You have full control over which edit types are enabled and can set time windows for when edits are allowed. Orders cannot be edited after fulfillment has begun.',
+      },
+      {
+        title: 'Does EasyEdit work with my Shopify theme?',
+        description:
+          'Yes. EasyEdit integrates seamlessly with any Shopify theme and embeds directly into your thank-you and order status pages.',
+      },
+      {
+        title: 'How does pricing work?',
+        description:
+          'EasyEdit offers three plans based on your monthly order volume: Basic ($19/mo for up to 500 orders), Grow ($49/mo for up to 1,500 orders), and Advanced ($199/mo for 1,500+ orders). All plans include unlimited edits, analytics, and support. A 30-day free trial is available.',
+      },
+      {
+        title: 'What happens to inventory and payments when an order is edited?',
+        description:
+          'EasyEdit automatically adjusts inventory levels and processes any payment differences when customers modify their orders.',
+      },
+      {
+        title: 'What languages does EasyEdit support?',
+        description:
+          'EasyEdit supports English, French, Spanish, and German, making it suitable for international Shopify stores.',
+      },
+    ]}
+    bg='<div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>'
+  />
+
+  <CallToAction
+    title="Let Your Customers Help Themselves"
+    subtitle="Join hundreds of Shopify merchants who reduced their support burden with EasyEdit."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Start Your Free Trial',
+        href: 'https://apps.shopify.com/easyedit-order-editing',
+        target: '_blank',
+        icon: 'tabler:arrow-right',
+      },
+    ]}
+  />
+</Layout>
