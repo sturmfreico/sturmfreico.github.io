@@ -1,0 +1,164 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Tieout - Verify Generated Reports With Confidence',
+  description:
+    'Compare generated reports against your original data sources to catch hallucinations, verify accuracy, and ensure complete data integrity.',
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Get Started',
+        href: 'https://tieout.ai/signup',
+        target: '_blank',
+        icon: 'tabler:arrow-right',
+      },
+      {
+        text: 'Learn More',
+        href: 'https://tieout.ai',
+        target: '_blank',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Verify Reports <span class="text-accent highlight">With Confidence</span>
+    </Fragment>
+    <Fragment slot="subtitle">
+      Compare generated reports against your original data sources to catch hallucinations, verify accuracy, and ensure
+      complete data integrity.
+    </Fragment>
+  </Hero>
+
+  <Stats
+    title="Trusted by Teams Worldwide"
+    stats={[
+      { title: 'Accuracy Rate', amount: '99.7%' },
+      { title: 'Reports Verified', amount: '2K+' },
+      { title: 'Avg. Time Saved', amount: '8hrs' },
+    ]}
+  />
+
+  <Features
+    id="features"
+    tagline="Features"
+    title="Everything You Need to Trust AI Outputs"
+    subtitle="Comprehensive verification tools to validate generated content against your source documents."
+    items={[
+      {
+        title: 'Multi-Format Support',
+        description: 'Upload and parse CSV, PDF, Excel, and other document formats as your source of truth.',
+        icon: 'tabler:file-upload',
+      },
+      {
+        title: 'Smart Comparison',
+        description:
+          'Automatically extract and compare numbers, percentages, and data points between reports.',
+        icon: 'tabler:arrows-diff',
+      },
+      {
+        title: 'Hallucination Detection',
+        description: 'Identify fabricated data, incorrect statistics, and made-up citations in AI outputs.',
+        icon: 'tabler:eye-check',
+      },
+      {
+        title: 'Link Verification',
+        description: 'Validate URLs and references mentioned in generated reports against actual sources.',
+        icon: 'tabler:link',
+      },
+      {
+        title: 'Detailed Reports',
+        description:
+          'Generate comprehensive accuracy reports with discrepancy highlights and confidence scores.',
+        icon: 'tabler:report-analytics',
+      },
+      {
+        title: 'Audit Trail',
+        description: 'Keep a complete history of all verifications for compliance and accountability.',
+        icon: 'tabler:history',
+      },
+    ]}
+  />
+
+  <Steps
+    title="Verify Reports in Three Simple Steps"
+    subtitle="Upload your AI-generated report, add your source documents, and let Tieout do the heavy lifting. Get detailed accuracy reports in seconds."
+    items={[
+      {
+        title: 'Upload Source Data',
+        description: 'Upload CSV, PDF, Excel, and other document formats as your original data source.',
+        icon: 'tabler:upload',
+      },
+      {
+        title: 'Compare Reports',
+        description:
+          'Tieout automatically extracts and compares data points, numbers, and references between your source and generated report.',
+        icon: 'tabler:analyze',
+      },
+      {
+        title: 'Review Results',
+        description:
+          'Get a detailed accuracy report highlighting discrepancies, hallucinated data, and confidence scores.',
+        icon: 'tabler:checklist',
+      },
+    ]}
+  />
+
+  <FAQs
+    title="Frequently Asked Questions"
+    tagline="FAQs"
+    columns={1}
+    items={[
+      {
+        title: 'What is Tieout?',
+        description:
+          'Tieout is a verification tool that compares AI-generated reports against original data sources to catch hallucinations, verify accuracy, and ensure complete data integrity.',
+      },
+      {
+        title: 'What file formats does Tieout support?',
+        description:
+          "Tieout supports CSV, PDF, Excel, and other common document formats, making it easy to upload your source data regardless of how it's stored.",
+      },
+      {
+        title: 'How does Tieout detect hallucinations?',
+        description:
+          'Tieout extracts data points, numbers, percentages, and references from both your source documents and the generated report, then systematically compares them to identify fabricated or inaccurate information.',
+      },
+      {
+        title: 'Can Tieout verify links and citations?',
+        description:
+          'Yes. Tieout validates URLs and references mentioned in generated reports against actual sources to ensure they are legitimate and accurate.',
+      },
+      {
+        title: 'Is my data secure?',
+        description:
+          'Absolutely. Tieout is SOC 2 compliant and takes data security seriously. Your documents are processed securely and not retained beyond the verification session.',
+      },
+    ]}
+    bg='<div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>'
+  />
+
+  <CallToAction
+    title="Stop Guessing. Start Verifying."
+    subtitle="Join teams who trust their AI outputs because they verify them with Tieout."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Get Started on Tieout',
+        href: 'https://tieout.ai/signup',
+        target: '_blank',
+        icon: 'tabler:arrow-right',
+      },
+    ]}
+  />
+</Layout>

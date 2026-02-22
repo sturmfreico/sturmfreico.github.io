@@ -3,8 +3,12 @@ import { getPermalink, getBlogPermalink } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Apps',
+      text: 'Products',
       links: [
+        {
+          text: 'Tieout',
+          href: getPermalink('/apps/tieout'),
+        },
         {
           text: 'EasyEdit - Order Editing',
           href: 'https://geteasyedit.com/',
