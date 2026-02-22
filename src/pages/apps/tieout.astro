@@ -4,7 +4,6 @@ import Hero from '~/components/widgets/Hero.astro';
 import Features from '~/components/widgets/Features.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import Steps from '~/components/widgets/Steps.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
@@ -20,7 +19,7 @@ const metadata = {
       {
         variant: 'primary',
         text: 'Get Started',
-        href: 'https://tieout.ai/signup',
+        href: 'https://tieout.ai',
         target: '_blank',
         icon: 'tabler:arrow-right',
       },
@@ -32,7 +31,7 @@ const metadata = {
     ]}
   >
     <Fragment slot="title">
-      Verify Reports <span class="text-accent highlight">With Confidence</span>
+      Tieout
     </Fragment>
     <Fragment slot="subtitle">
       Compare generated reports against your original data sources to catch hallucinations, verify accuracy, and ensure
@@ -114,40 +113,6 @@ const metadata = {
     ]}
   />
 
-  <FAQs
-    title="Frequently Asked Questions"
-    tagline="FAQs"
-    columns={1}
-    items={[
-      {
-        title: 'What is Tieout?',
-        description:
-          'Tieout is a verification tool that compares AI-generated reports against original data sources to catch hallucinations, verify accuracy, and ensure complete data integrity.',
-      },
-      {
-        title: 'What file formats does Tieout support?',
-        description:
-          "Tieout supports CSV, PDF, Excel, and other common document formats, making it easy to upload your source data regardless of how it's stored.",
-      },
-      {
-        title: 'How does Tieout detect hallucinations?',
-        description:
-          'Tieout extracts data points, numbers, percentages, and references from both your source documents and the generated report, then systematically compares them to identify fabricated or inaccurate information.',
-      },
-      {
-        title: 'Can Tieout verify links and citations?',
-        description:
-          'Yes. Tieout validates URLs and references mentioned in generated reports against actual sources to ensure they are legitimate and accurate.',
-      },
-      {
-        title: 'Is my data secure?',
-        description:
-          'Absolutely. Tieout is SOC 2 compliant and takes data security seriously. Your documents are processed securely and not retained beyond the verification session.',
-      },
-    ]}
-    bg='<div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>'
-  />
-
   <CallToAction
     title="Stop Guessing. Start Verifying."
     subtitle="Join teams who trust their AI outputs because they verify them with Tieout."
@@ -155,7 +120,7 @@ const metadata = {
       {
         variant: 'primary',
         text: 'Get Started on Tieout',
-        href: 'https://tieout.ai/signup',
+        href: 'https://tieout.ai',
         target: '_blank',
         icon: 'tabler:arrow-right',
       },
