@@ -4,7 +4,6 @@ import Hero from '~/components/widgets/Hero.astro';
 import Features from '~/components/widgets/Features.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import Steps from '~/components/widgets/Steps.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
@@ -20,7 +19,7 @@ const metadata = {
       {
         variant: 'primary',
         text: 'Start Free Trial',
-        href: 'https://apps.shopify.com/easyedit-order-editing',
+        href: 'https://geteasyedit.com/',
         target: '_blank',
         icon: 'tabler:arrow-right',
       },
@@ -32,7 +31,7 @@ const metadata = {
     ]}
   >
     <Fragment slot="title">
-      Stop Drowning in <span class="text-accent highlight">"Change My Order"</span> Requests
+      EasyEdit
     </Fragment>
     <Fragment slot="subtitle">
       Let your Shopify customers edit their own orders after purchase. Change addresses, update line items, and cancel
@@ -115,45 +114,6 @@ const metadata = {
     ]}
   />
 
-  <FAQs
-    title="Frequently Asked Questions"
-    tagline="FAQs"
-    columns={1}
-    items={[
-      {
-        title: 'What is EasyEdit?',
-        description:
-          'EasyEdit is a Shopify app that enables your customers to edit their own orders after purchase — including changing shipping addresses, updating line items, and cancelling orders — without needing to contact support.',
-      },
-      {
-        title: 'Can I control what customers are allowed to edit?',
-        description:
-          'Absolutely. You have full control over which edit types are enabled and can set time windows for when edits are allowed. Orders cannot be edited after fulfillment has begun.',
-      },
-      {
-        title: 'Does EasyEdit work with my Shopify theme?',
-        description:
-          'Yes. EasyEdit integrates seamlessly with any Shopify theme and embeds directly into your thank-you and order status pages.',
-      },
-      {
-        title: 'How does pricing work?',
-        description:
-          'EasyEdit offers three plans based on your monthly order volume: Basic ($19/mo for up to 500 orders), Grow ($49/mo for up to 1,500 orders), and Advanced ($199/mo for 1,500+ orders). All plans include unlimited edits, analytics, and support. A 30-day free trial is available.',
-      },
-      {
-        title: 'What happens to inventory and payments when an order is edited?',
-        description:
-          'EasyEdit automatically adjusts inventory levels and processes any payment differences when customers modify their orders.',
-      },
-      {
-        title: 'What languages does EasyEdit support?',
-        description:
-          'EasyEdit supports English, French, Spanish, and German, making it suitable for international Shopify stores.',
-      },
-    ]}
-    bg='<div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>'
-  />
-
   <CallToAction
     title="Let Your Customers Help Themselves"
     subtitle="Join hundreds of Shopify merchants who reduced their support burden with EasyEdit."
@@ -161,7 +121,7 @@ const metadata = {
       {
         variant: 'primary',
         text: 'Start Your Free Trial',
-        href: 'https://apps.shopify.com/easyedit-order-editing',
+        href: 'https://geteasyedit.com/',
         target: '_blank',
         icon: 'tabler:arrow-right',
       },
