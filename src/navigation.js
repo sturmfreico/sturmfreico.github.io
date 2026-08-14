@@ -9,10 +9,6 @@ export const headerData = {
           text: 'EasyEdit',
           href: getPermalink('/apps/easyedit'),
         },
-        {
-          text: 'Tieout',
-          href: getPermalink('/apps/tieout'),
-        },
       ],
     },
     // {
